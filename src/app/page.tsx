@@ -1,11 +1,20 @@
-import React from 'react'
+import CardList from "@/components/CardList";
+import CategoryList from "@/components/CategoryList";
+import Featured from "@/components/Featured";
+import Menu from "@/components/Menu";
 
-const page = () => {
+const Home = () => {
   return (
     <div>
-      <h1>Artik</h1>
-    </div>
-  )
-}
+      <Featured />
+      <CategoryList />
 
-export default page
+      <div>
+        <CardList />
+        <Menu />
+      </div>
+    </div>
+  );
+};
+
+export default Home;
