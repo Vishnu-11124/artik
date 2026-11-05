@@ -1,5 +1,3 @@
-import React from "react";
-import Image from "next/image";
 import Button from "./Button";
 
 const Featured = () => {
@@ -12,7 +10,7 @@ const Featured = () => {
   };
 
   return (
-    <section className="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-20">
+    <section className="mx-auto max-w-7xl px-5 py-10.5 lg:px-8 lg:py-12">
       {/* Featured Content */}
       <div className="grid items-center gap-8 overflow-hidden rounded-2xl border border-border bg-surface p-4 md:grid-cols-2 md:gap-10 md:p-6 lg:p-8">
         {/* Image */}
