@@ -90,7 +90,7 @@ const Navbar = () => {
           ) : (
             <Link
               href="/login"
-              className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-primary-hover"
+              className="rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-primary-hover"
             >
               Login
             </Link>
@@ -137,7 +137,7 @@ const Navbar = () => {
                 <Link
                   href="/login"
                   onClick={() => setIsOpen(false)}
-                  className="inline-block rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-black transition hover:bg-primary-hover"
+                  className="inline-block rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-primary-hover"
                 >
                   Login
                 </Link>

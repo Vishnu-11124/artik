@@ -3,21 +3,21 @@
 
 :root {
   /* Backgrounds */
-  --background: #11111b;
-  --surface: #1c1c29;
-  --surface-hover: #252535;
+  --background: #F5EBD0;
+  --surface: #FFF9ED;
+  --surface-hover: #EDE0C3;
 
   /* Text */
-  --foreground: #f8f5ef;
-  --muted: #a1a1aa;
+  --foreground: #7F011F;
+  --muted: #806F60;
 
   /* Brand colors */
-  --primary: #8b5cf6;
-  --primary-hover: #a78bfa;
+  --primary: #7F011F;
+  --primary-hover: #600018;
 
   /* UI */
-  --border: #30303d;
-  --success: #10b981;
+  --border: #DFD0B3;
+  --success: #386641;
 
   /* Fonts */
   --font-display: "DM Serif Display", serif;
