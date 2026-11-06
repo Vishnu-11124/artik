@@ -146,7 +146,7 @@ const Menu = () => {
         </div>
 
         <div className="flex flex-col divide-y divide-border">
-          {posts.slice(0, 5).map((post) => (
+          {posts.slice(0, 4).map((post) => (
             <MenuPostCard post={post} isImage={false} key={post.id} />
           ))}
         </div>
@@ -186,7 +186,7 @@ const Menu = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          {posts.slice(3, 8).map((post) => (
+          {posts.slice(4, 8).map((post) => (
             <MenuPostCard post={post} isImage={true} key={post.id} />
           ))}
         </div>
