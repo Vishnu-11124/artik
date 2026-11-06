@@ -75,16 +75,36 @@ const CardList = () => {
     },
   ];
   return (
-    <div className="flex-5">
-      <h1>Recent Posts</h1>
-      <div>
-        {/* posts */}
+    <section className="w-full min-w-0">
+      {/* Section Heading */}
+      <div className="mb-6 flex items-end justify-between border-b border-border pb-4">
+        <div>
+          <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary sm:text-xs">
+            The Journal
+          </p>
+
+          <h2 className="font-display text-2xl text-foreground sm:text-3xl">
+            Recent Posts
+          </h2>
+        </div>
+
+        <span className="pb-1 text-xs text-muted sm:text-sm">
+          {recentPosts.length} articles
+        </span>
+      </div>
+
+      {/* Post List */}
+      <div className="flex flex-col gap-4">
         {recentPosts.map((post) => (
           <PostCards key={post.id} post={post} />
         ))}
       </div>
-      <Pagination />
-    </div>
+
+      {/* Pagination */}
+      <div className="mt-8 border-t border-border pt-6">
+        <Pagination />
+      </div>
+    </section>
   );
 };
 
