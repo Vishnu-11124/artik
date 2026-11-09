@@ -10,11 +10,20 @@ const Navbar = () => {
   const user = false;
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [
+  const links = [
     { name: "HOME", href: "/" },
     { name: "CONTACT", href: "/contact" },
     { name: "ABOUT", href: "/about" },
   ];
+
+  const userLinks = [
+    { name: "HOME", href: "/" },
+    { name: "WRITE", href: "/write" },
+    { name: "CONTACT", href: "/contact" },
+    { name: "ABOUT", href: "/about" },
+  ];
+
+  const navLinks = user ? userLinks : links;
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-md">
